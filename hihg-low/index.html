@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino High-Low</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="start-screen">
+    <h1>Casino High & Low</h1>
+    <p>プレイヤーの人数を選んでね</p>
+    <div class="setup-btns">
+      <button onclick="initGame(1)">1人</button>
+      <button onclick="initGame(2)">2人</button>
+      <button onclick="initGame(3)">3人</button>
+      <button onclick="initGame(4)">4人</button>
+      <button onclick="initGame(5)">5人</button>
+    </div>
+  </div>
+
+  <div id="game-screen" style="display: none;">
+    <div id="casino-table">
+      <div id="dealer-area">
+        <div class="card" id="dealer-card">🂠</div>
+        <p class="label">DEALER</p>
+      </div>
+      <div id="players-area"></div>
+    </div>
+
+    <div id="ui-area">
+      <div id="message-area">準備中...</div>
+      <div id="control-panel"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
